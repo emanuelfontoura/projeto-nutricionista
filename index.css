@@ -1,0 +1,355 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-areas: 
+        'header header'
+        'sidenav conteudo'
+        'sidenav conteudo'
+        'rodape rodape'
+    ;
+}
+
+.cabecalho{
+    grid-area: header;
+    background-color: #CAECBE;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-container2{
+    font-family: 'Amatic SC', cursive;
+}
+
+.item-container2 h1{
+    font-size: 2.8em;
+    color: #25D693;
+}
+
+.item-container2 h2{
+    text-align: center;
+    color: black;
+}
+
+.item-container1 img{
+    max-width: 200px;
+}
+
+.item-container3 a img{
+    max-width: 30px;
+}
+
+.item-container3{
+    display: flex;
+    align-items: center;
+}
+
+.item-container3 a{
+    padding: 5px;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+
+.item-container3 a:hover{
+    background-color: #e3f1d8;
+    box-shadow: 0px 3px 5px rgba(44, 44, 44, 0.1);
+}
+
+.item-container3 a + a{
+    margin-left: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+.sidenav{
+    grid-area: sidenav;
+    padding: 40px 20px;
+    background-color: #ECEDCD;
+    font-family: 'Vollkorn', serif;
+}
+
+.sidenav a{
+    padding: 10px;
+    display: block;
+    background-color: #fffff1;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0px 3px 5px rgba(44, 44, 44, 0.1);
+}
+
+.sidenav li + li{
+    margin-top: 20px;
+}
+
+.sidenav img{
+    margin: 0px auto;
+}
+
+.sidenav div{
+    text-align: center;
+    margin: 10px -10px -10px -10px;
+    background-color: #25D693;
+    color: white;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sidenav img{
+    min-width: 70px;
+    max-width: 80px;
+}
+
+.sidenav a:hover{
+    background-color: #92E9B6;
+}
+
+.sidenav a:hover > div{
+    background-color: #92E9B6;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.sidenav a, .sidenav div{
+    transition-duration: 0.3s;
+}
+
+.content{
+    grid-area: conteudo;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    row-gap: 20px;
+    font-family: 'Ubuntu', sans-serif; 
+    background-color: #ECEDCD;
+}
+
+.p1{
+    padding: 50px;
+    align-self: center;
+    line-height: 1.5;
+    text-indent: 20px;
+    letter-spacing: -0.005em;
+}
+
+.p2{
+    padding: 20px;
+    align-self: center;
+    line-height: 1.5;
+    text-indent: 20px;
+    letter-spacing: -0.005em;
+}
+
+.content img{
+    justify-self: center;
+    align-self: center;
+    margin: 10px;
+    box-shadow: 0px 5px 10px rgba(44, 44, 44, 0.15);
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.foto2{
+    max-width: 80%;
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: #25D693;
+    font-family: 'Vollkorn', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content h1{
+    font-size: 1.8em;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    font-weight: lighter;
+    margin: 10px auto;
+    max-width: 500px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.social{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.social li{
+    margin: 0px 10px;
+}
+
+.social a{
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.social a i{
+    font-size: 1.1rem;
+}
+
+.social a:hover{
+    color: black;
+}
+
+.footer-bottom{
+    padding: 20px 0px;
+    background-color: #CAECBE;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span a{
+    opacity: 0.4;
+    text-transform: uppercase;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+@media (max-width: 860px) {
+    .content{
+        grid-template-columns: auto;
+        gap: 2px;
+    }
+
+    .content img{
+        max-width: 80%;
+    }
+
+    .p1{
+        padding: 10px;
+        text-indent: 0px;
+    }
+
+    .p2{
+        padding: 10px;
+        text-indent: 0px;
+    }
+}
+
+@media (max-width: 774px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'header'
+            'sidenav'
+            'conteudo'
+            'rodape'
+        ;
+    }
+
+    .content{
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    .content img{
+        max-width: 80%;
+    }
+
+    .p1{
+        padding: 10px;
+        text-indent: 0px;
+    }
+
+    .p2{
+        padding: 10px;
+        text-indent: 0px;
+    }
+    
+    .cabecalho{
+        justify-content: center;
+    }
+
+    .item-container1 img{
+        max-width: 150px;
+    }
+
+    .item-container2{
+        display: none;
+    }
+
+    .item-container3{
+        display: none;
+    }
+
+    .sidenav{
+        padding: 20px;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .sidenav a:hover > div{
+        background-color: #92E9B6;
+        font-weight: normal;
+        color: white;
+        letter-spacing: 0px;
+    }
+
+    .sidenav ul{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .sidenav li + li{
+        margin-left: 20px;
+    }
+
+    .sidenav li + li{
+        margin-top: 0;
+    }
+
+    .sidenav ul li{
+        flex: 1 0 60px;
+    }
+}

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    justify-items: center;
+}
+
+.content img{
+    max-width: 70px;
+    box-shadow: none;
+    margin: 20px auto;
+}
+
+.content a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.3s;
+}
+
+.content ul li + li{
+    margin-top: 50px;
+}
+
+.content a:hover{
+    color: #25D693;
+}
